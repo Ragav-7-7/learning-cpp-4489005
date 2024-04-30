@@ -3,9 +3,12 @@
 // Using the exercise files on GitHub, by Eduardo Corpeño 
 
 #include <iostream>
+#include <typeinfo>
 
 int main(){
-    float num_1, num_2, result, num_3;
+    auto a = 8;
+
+    std::cout << "The type of a is " << typeid(a).name() << std::endl;
 
     std::cout << "Enter number 1: " << std::flush;
     std::cin >> num_1;
